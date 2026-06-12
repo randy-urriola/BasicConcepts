@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RectangleArea", "RectangleA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Circle", "Circle\Circle.csproj", "{A57E2ACF-B237-4F81-9AD2-F42E48E78C32}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IFCondition", "IFCondition\IFCondition.csproj", "{31E08339-C93F-4F55-AF5B-D0E01C66C62F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{A57E2ACF-B237-4F81-9AD2-F42E48E78C32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A57E2ACF-B237-4F81-9AD2-F42E48E78C32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A57E2ACF-B237-4F81-9AD2-F42E48E78C32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31E08339-C93F-4F55-AF5B-D0E01C66C62F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31E08339-C93F-4F55-AF5B-D0E01C66C62F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31E08339-C93F-4F55-AF5B-D0E01C66C62F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31E08339-C93F-4F55-AF5B-D0E01C66C62F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
