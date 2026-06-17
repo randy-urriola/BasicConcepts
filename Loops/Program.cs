@@ -1,25 +1,35 @@
 ﻿int TotalJugador = 0;
 int TotalDealer = 0;
-int num;
+int num, coins;
 string Message;
 string controlOtraCarta = "";
 string switchControl = "menu";
 System.Random random = new System.Random();
 
 while(true){
-    TotalJugador = 0;
-    TotalDealer = 0;
-        switch (switchControl){
+
+    Console.WriteLine("\nWelcome to my C A S I N O");
+    Console.WriteLine("how many coins do you want to play?");
+    coins = int.Parse(Console.ReadLine());
+    // For
+    for (int i = 0; i < coins; i++)
+    {
+
+        TotalJugador = 0;
+        TotalDealer = 0;
+        switch (switchControl)
+        {
             case "menu":
-                Console.WriteLine("Welcome to my C A S I N O");
-                Console.WriteLine("Write 21 to start");
+                //Console.WriteLine("Welcome to my C A S I N O");
+                Console.WriteLine("\nWrite 21 to start");
                 switchControl = Console.ReadLine();
+                i--;
                 break;
 
             case "21":
                 do
                 {
-                    num = random.Next(1,12);
+                    num = random.Next(1, 12);
                     TotalJugador += num;
                     Console.WriteLine("Take your card player, ");
                     Console.WriteLine($"you've got: {num} ");
@@ -27,7 +37,7 @@ while(true){
                     controlOtraCarta = Console.ReadLine();
                 } while (controlOtraCarta.ToLower() == "si" || controlOtraCarta.ToLower() == "yes");
 
-                TotalDealer = random.Next(12,23);
+                TotalDealer = random.Next(12, 23);
                 Console.WriteLine($"The dealer have: {TotalDealer}!");
 
                 if (TotalJugador > TotalDealer && TotalJugador < 22)
@@ -52,12 +62,12 @@ while(true){
 
                 Console.WriteLine(Message);
 
-            break;
+                break;
             default:
                 Console.WriteLine("Error in input value  - C A S I N O -");
                 break;
         }
-    
+    }
 }
 
 
